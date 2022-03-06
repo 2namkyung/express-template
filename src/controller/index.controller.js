@@ -1,4 +1,8 @@
 export async function create(req, res){
 
-    res.json({data:"success"})
+    res.json({
+        success:true,
+        data:"success",
+        error:null
+    })
 }

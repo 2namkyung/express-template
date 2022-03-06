@@ -11,6 +11,8 @@ describe('multipart/form-data infura url', ()=>{
            .expect('Content-Type', /json/)
            .expect(200)
            
+        expect(response.body.success).toBeTruthy()
         expect(response.body.data).toBe("success")
+        expect(response.body.error).toBeNull()
     })
 })  
